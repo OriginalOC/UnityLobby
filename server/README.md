@@ -6,7 +6,7 @@ UnityLobby is the reference server for the Unity ecosystem. It serves:
 - Saves storage (commit-based)
 - Rooms for netplay relay, spectate, and GPU display list broadcast (Mode A)
 
-This folder is the server implementation home. The protocol specs live in `docs/protocol/`.
+This folder is the server implementation home. The protocol specs live in [docs/protocol/](docs/protocol/).
 
 ## Goals
 - MCU-first protocol parsing: bounded allocations, strict limits, predictable behavior
@@ -20,7 +20,7 @@ This folder is the server implementation home. The protocol specs live in `docs/
 
 ## Configuration
 Copy the example config and edit:
-- `server/config/unitylobby.example.toml` -> your runtime config path, e.g. `server/config/unitylobby.toml`
+- [`server/config/unitylobby.example.toml`](config/unitylobby.example.toml) -> your runtime config path, e.g. `server/config/unitylobby.toml`
 
 Key settings:
 - `net.listen_addr`, `net.port`
@@ -30,7 +30,7 @@ Key settings:
 - `rooms.*` for player/spectator limits and policies
 
 ## Storage layout
-UnityLobby stores content in an on-disk repo rooted at `storage.root`. See `repo/README.md` for the recommended layout.
+UnityLobby stores content in an on-disk repo rooted at `storage.root`. See [repo/README.md](repo/README.md) for the recommended layout.
 
 ## Development notes
 - Protocol docs are canonical. Implementations should match test vectors byte-for-byte.
