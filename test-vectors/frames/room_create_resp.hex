@@ -1,0 +1,4 @@
+# length=0x24 (36), type=0x0411, flags=0x0001, request_id=5, status=0, proto_version=0x00000002
+24000000 11040100 05000000 00000000
+02000000 99999999 aaaabbbb ccccdddd
+eeeeffff 00000000

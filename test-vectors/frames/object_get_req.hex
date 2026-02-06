@@ -1,6 +1,5 @@
-# UnityLink v0.2 OBJECT_GET_REQ
-# length=0x4C (76), type=0x0200, flags=0x0000, request_id=2, status=0, proto_version=0x00000002
-4c000000 0002 0000 02000000 00000000 02000000
+# length=0x48 (72), type=0x0200, flags=0x0000, request_id=2, status=0, proto_version=0x00000002
+48000000 0002 0000 02000000 00000000 02000000
 aaaaaaaa aaaaaaaa aaaaaaaa aaaaaaaa aaaaaaaa aaaaaaaa aaaaaaaa aaaaaaaa
 00000000 00000000
 00000000 00000000
