@@ -4,7 +4,7 @@ UnityLobby is the reference server for the Unity ecosystem. It is designed to se
 
 UnityLobby is the server-side hub. UnityXX cartridges (Unity20/64/99/8/26/52/78) are the client-side runtime that connects to it. See `docs/UnityXX.md` for a shared overview of the UnityXX clients.
 
-For Unity64-specific details, see `docs/architecture.md` in the Unity64 repo.
+For Unity64-specific details, see `Unity64/docs/architecture.md` in the Unity64 repo.
 
 ## Components
 

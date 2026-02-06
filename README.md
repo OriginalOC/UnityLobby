@@ -32,6 +32,10 @@ It implements **UnityLink** (MCU-first TCP protocol) and **UnityGPU Stream** (di
 - [Registries (v0.2)](docs/protocol/registries-v0.2.md)
 - [v0.2 Errata](docs/protocol/v0.2-errata.md)
 - [v0.3 Handoff](docs/protocol/v0.3-handoff.md)
+- [Cross-Repo Compatibility Matrix](docs/compatibility-matrix.md)
+
+## Docs sync
+Use `make compat-sync` to update Unity64 compatibility tables from the matrix, and `make compat-check` to verify they are in sync.
 
 ## License
 Apache-2.0. See [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE)
