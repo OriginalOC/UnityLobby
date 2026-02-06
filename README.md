@@ -33,6 +33,7 @@ It implements **UnityLink** (MCU-first TCP protocol) and **UnityGPU Stream** (di
 - [v0.2 Errata](docs/protocol/v0.2-errata.md)
 - [v0.3 Handoff](docs/protocol/v0.3-handoff.md)
 - [Cross-Repo Compatibility Matrix](docs/compatibility-matrix.md)
+- [Protocol Adoption Checklist](docs/protocol-adoption-checklist.md)
 
 ## Docs sync
 Use `make compat-sync` to update Unity64 compatibility tables from the matrix, and `make compat-check` to verify they are in sync.
