@@ -1,0 +1,89 @@
+# UnityLobby example configuration
+# Copy to unitylobby.toml and edit as needed
+
+[net]
+listen_addr = "0.0.0.0"
+port = 6464
+
+# If you terminate TLS elsewhere, UnityLobby can stay plain TCP on LAN
+# tls_enabled = false
+
+[auth]
+# Security default (UnitySTEAM direction):
+# - "required": write operations require auth_token
+# - "optional": allow writes without token (dev only)
+mode = "required"
+
+# Tokens are compared against HELLO auth_token bytes
+# Keep these short and rotateable. Treat as secrets.
+tokens = [
+  "dev-token-change-me"
+]
+
+# If true, read-only operations (catalog, manifests, objects, time/ping) are allowed without auth
+allow_anonymous_read = true
+
+[limits]
+# Absolute frame length cap enforced by server
+max_frame_length_bytes = 1048576
+
+# Max payload bytes server will recommend/accept per frame (client negotiates max_frame_payload_preference)
+recommended_frame_payload = 16384
+
+# Hard caps for variable fields
+max_varstr_bytes = 256
+max_varbytes_bytes = 1048576
+
+# Catalog and manifest caps
+max_catalog_limit = 256
+max_manifest_objects = 4096
+
+# Save caps
+max_save_slot_bytes = 1048576
+
+# GPU command buffer cap per frame delivered to clients
+max_gpu_cmd_bytes = 4096
+
+# Max concurrent inflight requests per session (server advertises in WELCOME)
+max_inflight_requests = 16
+
+# Idle session timeout in seconds (no bytes received)
+idle_timeout_seconds = 120
+
+[storage]
+# Root directory for UnityLobby repo data
+root = "./data/unitylobby"
+
+# If true, UnityLobby will create missing directories under storage.root
+auto_create = true
+
+# If true, UnityLobby will rebuild indexes on startup if missing
+rebuild_indexes_on_start = true
+
+[rooms]
+# Default room limits (can also be constrained by app metadata TLVs)
+default_tick_hz = 30
+default_input_delay_ticks = 3
+
+# Max occupants
+max_players_per_room = 8
+max_spectators_per_room = 16
+
+# Public room creation policy
+# - "auth_only": only authenticated clients can create rooms (recommended)
+# - "dev": allow room creation without auth (dev only)
+create_policy = "auth_only"
+
+# Backpressure policy for GPU/spectate
+# - keep_latest_complete: drop older frames per client, keep newest complete
+gpu_backpressure = "keep_latest_complete"
+
+# For lockstep inputs, retain a sliding window of inputs (ticks)
+input_window_ticks = 256
+
+[logging]
+level = "info"
+# level = "debug"
+
+# Optional log file path, otherwise stdout
+# file = "./data/unitylobby/unitylobby.log"
