@@ -36,3 +36,23 @@ UnityLobby stores content in an on-disk repo rooted at `storage.root`. See [repo
 - Protocol docs are canonical. Implementations should match test vectors byte-for-byte.
 - Do not relax limits in code without updating docs and test vectors.
 - Prefer additive protocol changes and registry updates over breaking changes.
+
+## Build + Run (CMake)
+From repo root:
+
+```bash
+cmake -S server -B out/server
+cmake --build out/server
+```
+
+Run the server:
+
+```bash
+./out/server/unitylobby_server
+```
+
+Run vector replay test:
+
+```bash
+./out/server/unitylobby_vector_replay
+```

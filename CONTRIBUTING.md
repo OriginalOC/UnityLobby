@@ -15,20 +15,20 @@ The project goal is stability and determinism: MCU-friendly specs, tight registr
 - Prefer additive changes. Breaking changes require a clear migration story.
 
 ## Repo structure
-- `docs/protocol/` — canonical specs and registries
-- `server/` — UnityLobby daemon implementation
-- `test-vectors/` — frames, sha256/crc32 vectors
-- `tools/` — helpers to generate/verify vectors
+- [docs/protocol/](docs/protocol/) — canonical specs and registries
+- [server/](server/) — UnityLobby daemon implementation
+- [test-vectors/](test-vectors/) — frames, sha256/crc32 vectors
+- [tools/](tools/) — helpers to generate/verify vectors
 
 ## Version policy
 ### UnityLink v0.2
 - Treated as **frozen**
-- Corrections and clarifications go into `docs/protocol/v0.2-errata.md`
-- Do not rewrite `docs/protocol/unitylink-v0.2.md` except for formatting or clearly non-semantic fixes
+- Corrections and clarifications go into [docs/protocol/v0.2-errata.md](docs/protocol/v0.2-errata.md)
+- Do not rewrite [docs/protocol/unitylink-v0.2.md](docs/protocol/unitylink-v0.2.md) except for formatting or clearly non-semantic fixes
 
 ### UnityLink v0.3
-- New work should go into new docs (e.g. `docs/protocol/unitylink-v0.3.md`)
-- Keep proposals aligned with `docs/protocol/v0.3-handoff.md`
+- New work should go into new docs (e.g. [docs/protocol/unitylink-v0.3.md](docs/protocol/unitylink-v0.3.md))
+- Keep proposals aligned with [docs/protocol/v0.3-handoff.md](docs/protocol/v0.3-handoff.md)
 - Prefer capability-gated, additive features
 
 ## Specs: how to propose changes
@@ -45,7 +45,7 @@ The project goal is stability and determinism: MCU-friendly specs, tight registr
    - add test vectors demonstrating the change
 
 ## Errata workflow (v0.2)
-- Add an entry to `docs/protocol/v0.2-errata.md`
+- Add an entry to [docs/protocol/v0.2-errata.md](docs/protocol/v0.2-errata.md)
 - Format:
   - Errata-XXXX: title, date
   - Affected sections
@@ -55,8 +55,8 @@ The project goal is stability and determinism: MCU-friendly specs, tight registr
 
 ## Test vectors (required for protocol changes)
 When a message layout changes or a new message is added:
-- Add a hexdump under `test-vectors/frames/`
-- Add any referenced object/hash data under `test-vectors/sha256/` and `test-vectors/crc32/`
+- Add a hexdump under [test-vectors/frames/](test-vectors/frames/)
+- Add any referenced object/hash data under [test-vectors/sha256/](test-vectors/sha256/) and [test-vectors/crc32/](test-vectors/crc32/)
 - Keep vectors small and deterministic
 
 ## Code contributions (server/)
@@ -74,7 +74,7 @@ When a message layout changes or a new message is added:
 ## Security
 If you find a security issue:
 - Do not open a public issue
-- Follow `SECURITY.md`
+- Follow [SECURITY.md](SECURITY.md)
 
 ## Code of Conduct
 Be respectful. Assume good intent. Keep feedback actionable.

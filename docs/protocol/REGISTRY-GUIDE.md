@@ -3,8 +3,8 @@
 Registries are the stability backbone for UnityLink/UnityGPU. This guide defines how to evolve IDs without breaking compatibility.
 
 ## Where registries live
-- `registries-v0.2.md` is the authoritative registry document for v0.2
-- New protocol versions add new registry docs (e.g., `registries-v0.3.md`) or extend with clearly labeled sections
+- [registries-v0.2.md](registries-v0.2.md) is the authoritative registry document for v0.2
+- New protocol versions add new registry docs (e.g., [registries-v0.3.md](registries-v0.3.md)) or extend with clearly labeled sections
 
 ## Rules (normative)
 - IDs MUST NOT be reused for different meanings

@@ -5,7 +5,7 @@ This document defines the authoritative binary metadata TLVs carried in `APP_MAN
 Goal: allow UnityXX clients to avoid JSON parsing for netplay/GPU parameters and other hot-path settings.
 
 Authoritative references:
-- TLV type registry: `registries-v0.2.md` (App Metadata TLV Types)
+- TLV type registry: [registries-v0.2.md](registries-v0.2.md) (App Metadata TLV Types)
 - Field meanings and constraints: maintained here
 
 ## Precedence

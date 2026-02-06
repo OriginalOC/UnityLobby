@@ -52,8 +52,8 @@ Explicitly state ordering guarantees:
 
 ## Examples and test vectors
 Any new message family should include:
-- at least one hexdump example in `test-vectors/frames/`
-- any required sha/crc vectors in `test-vectors/`
+- at least one hexdump example in [test-vectors/frames/](test-vectors/frames/)
+- any required sha/crc vectors in [test-vectors/](test-vectors/)
 
 ## Versioning
 - Keep v0.2 frozen; use errata for fixes

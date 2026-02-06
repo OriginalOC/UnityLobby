@@ -3,7 +3,7 @@
 UnityGPU Stream v0 defines a compact display-list command buffer for rendering “draw intent” across UnityXX platforms.
 
 Authoritative references:
-- Opcode registry: `registries-v0.2.md` (UnityGPU Stream v0 Opcodes)
+- Opcode registry: [registries-v0.2.md](registries-v0.2.md) (UnityGPU Stream v0 Opcodes)
 - Mode A transport: UnityLink room GPU frames (ROOM_GPU_FRAME)
 - Mode B usage: local-only display list format shared across platforms
 

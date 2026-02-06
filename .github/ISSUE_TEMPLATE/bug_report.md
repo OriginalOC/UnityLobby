@@ -34,7 +34,7 @@ Steps to reproduce:
 Paste relevant logs (redact tokens). If protocol-related, include:
 - message types involved
 - request_id values
-- any hexdumps / frames (or file paths under `test-vectors/frames/`)
+- any hexdumps / frames (or file paths under [test-vectors/frames/](test-vectors/frames/))
 
 ## Suspected cause (optional)
 If you have a guess, share it.
