@@ -24,3 +24,6 @@ out/
 # Server runtime data (do not commit)
 repo/
 data/
+
+# Generated frame binaries
+test-vectors/frames/*.bin
