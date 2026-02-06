@@ -106,9 +106,10 @@ def main() -> int:
         if mismatches:
             print("Compatibility tables are out of sync:")
             for path in mismatches:
-                print(f\"- {path}\")
+                print(f"- {path}")
             return 1
-        print(\"Compatibility tables are in sync.\")\n        return 0
+        print("Compatibility tables are in sync.")
+        return 0
     changed = False
     for target in targets:
         if replace_section(target, table):

@@ -26,17 +26,17 @@ Source: `Unity64/bin/TeensyROM/FW_Release_History.md`
 
 | Unity64 FW | Release date | UnityLink | UnityGPU Stream | Notes |
 | --- | --- | --- | --- | --- |
-| 0.7 | 2025/12/04 | TBD | TBD | Protocol compatibility not documented yet. |
-| 0.6.8 | 2025/07/25 | TBD | TBD | Protocol compatibility not documented yet. |
-| 0.6.7 | 2025/06/14 | TBD | TBD | Protocol compatibility not documented yet. |
-| 0.6.6 | 2025/02/15 | TBD | TBD | Protocol compatibility not documented yet. |
-| 0.6.5 | 2025/01/20 | TBD | TBD | Protocol compatibility not documented yet. |
-| 0.6.4 | 2025/01/03 | TBD | TBD | Protocol compatibility not documented yet. |
-| 0.6.3_Mega65 | 2024/12/04 | TBD | TBD | Protocol compatibility not documented yet. |
-| 0.6.3 | 2024/12/02 | TBD | TBD | Protocol compatibility not documented yet. |
-| 0.6.2 | 2024/10/06 | TBD | TBD | Protocol compatibility not documented yet. |
-| 0.6.1 | 2024/09/16 | TBD | TBD | Protocol compatibility not documented yet. |
-| 0.6 | 2024/07/10 | TBD | TBD | Protocol compatibility not documented yet. |
+| 0.7 | 2025/12/04 | None yet | None yet | Protocol support not implemented. |
+| 0.6.8 | 2025/07/25 | None yet | None yet | Protocol support not implemented. |
+| 0.6.7 | 2025/06/14 | None yet | None yet | Protocol support not implemented. |
+| 0.6.6 | 2025/02/15 | None yet | None yet | Protocol support not implemented. |
+| 0.6.5 | 2025/01/20 | None yet | None yet | Protocol support not implemented. |
+| 0.6.4 | 2025/01/03 | None yet | None yet | Protocol support not implemented. |
+| 0.6.3_Mega65 | 2024/12/04 | None yet | None yet | Protocol support not implemented. |
+| 0.6.3 | 2024/12/02 | None yet | None yet | Protocol support not implemented. |
+| 0.6.2 | 2024/10/06 | None yet | None yet | Protocol support not implemented. |
+| 0.6.1 | 2024/09/16 | None yet | None yet | Protocol support not implemented. |
+| 0.6 | 2024/07/10 | None yet | None yet | Protocol support not implemented. |
 
 ## How to update
 - When Unity64 firmware adopts UnityLink or UnityGPU versions, replace `TBD` with the supported protocol versions.
