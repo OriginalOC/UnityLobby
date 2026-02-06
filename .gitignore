@@ -27,3 +27,6 @@ data/
 
 # Generated frame binaries
 test-vectors/frames/*.bin
+
+# Generated frame binaries
+test-vectors/frames/*.bin
