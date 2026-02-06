@@ -2,6 +2,10 @@
 
 UnityLobby is the reference server for the Unity ecosystem. It is designed to serve many classic platforms through a single MCU-first protocol (UnityLink), with a long-term goal of a UnitySTEAM-style library: discovery, installs, updates, saves, multiplayer, and spectating.
 
+UnityLobby is the server-side hub. UnityXX cartridges (Unity20/64/99/8/26/52/78) are the client-side runtime that connects to it. See `docs/UnityXX.md` for a shared overview of the UnityXX clients.
+
+For Unity64-specific details, see `docs/architecture.md` in the Unity64 repo.
+
 ## Components
 
 ### UnityXX clients (carts)
@@ -11,6 +15,10 @@ UnityXX refers to platform cartridges (Unity20/64/99/8/26/52/78). Each client im
 - Object streaming with SHA-256 verification
 - Optional saves (commit-based)
 - Optional rooms: lockstep input relay and or GPU stream receive
+- Local UI and loader behavior for that platform
+- Mailbox bridge to a host computer (if present)
+- Optional local caching of objects and metadata
+- Platform-specific app launch (PRG/CRT/etc.)
 
 Client capabilities vary by platform. UnityLink uses a capabilities bitset so UnityLobby can tailor responses.
 
@@ -57,7 +65,7 @@ Rooms support:
 - Mode B: lockstep input relay (cross-platform netplay)
 - Mode A: GPU display list broadcast (remote render + spectators)
 
-UnityLobby is a relay for inputs and GPU frames. In lockstep, the simulation runs on the clients.
+UnityLobby is a relay for inputs and GPU frames. It does not run the game. In lockstep, the simulation runs on the clients.
 
 ## Key design principles
 
@@ -81,7 +89,7 @@ UnityLobby is intended to grow into:
 ## Typical flows
 
 ### App discovery and install (v0.2)
-1) Client connects, HELLO/WELCOME
+1) Client connects, HELLO/WELCOME (platform id, capabilities, device name, optional auth token)
 2) Client requests CATALOG_LIST
 3) Client requests APP_MANIFEST_GET
 4) Client streams required objects via OBJECT_GET
@@ -106,4 +114,4 @@ v0.3 work should be additive and focus on:
 - Stats and structured error detail codes
 - Minimal auth evolution hooks
 
-See `docs/protocol/v0.3-handoff.md`
+See [docs/protocol/v0.3-handoff.md](docs/protocol/v0.3-handoff.md)
