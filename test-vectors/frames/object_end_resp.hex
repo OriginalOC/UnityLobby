@@ -1,0 +1,6 @@
+# UnityLink v0.2 OBJECT_END_RESP
+# length=0x40 (64), type=0x0202, flags=0x0001, request_id=2, status=0, proto_version=0x00000002
+40000000 0202 0100 02000000 00000000 02000000
+aaaaaaaa aaaaaaaa aaaaaaaa aaaaaaaa aaaaaaaa aaaaaaaa aaaaaaaa aaaaaaaa
+10000000 00000000
+b5373c98
