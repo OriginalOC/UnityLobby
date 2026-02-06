@@ -16,23 +16,23 @@ It implements **UnityLink** (MCU-first TCP protocol) and **UnityGPU Stream** (di
 - Next: UnityLink v0.3 (install transactions, UnityIEC proxy/cache, observability)
 
 ## What’s in this repo
-- `docs/protocol/` — UnityLink + UnityGPU specs, registries, TLVs, errata, and v0.3 handoff
-- `server/` — UnityLobby server implementation (to be built out)
-- `test-vectors/` — byte-accurate frames and hash vectors for cross-implementation compatibility
-- `tools/` — helpers for encoding/decoding frames and generating test vectors
+- [`docs/protocol/`](docs/protocol/) — UnityLink + UnityGPU specs, registries, TLVs, errata, and v0.3 handoff
+- [`server/`](server/) — UnityLobby server implementation (to be built out)
+- [`test-vectors/`](test-vectors/) — byte-accurate frames and hash vectors for cross-implementation compatibility
+- [`tools/`](tools/) — helpers for encoding/decoding frames and generating test vectors
 
 ## Quick links
-- UnityLink v0.2: `docs/protocol/unitylink-v0.2.md`
-- UnityGPU Stream v0: `docs/protocol/unitygpu-stream-v0.md`
-- App Metadata TLVs v0: `docs/protocol/app-metadata-tlvs-v0.md`
-- Registries (v0.2): `docs/protocol/registries-v0.2.md`
-- v0.2 Errata: `docs/protocol/v0.2-errata.md`
-- v0.3 Handoff: `docs/protocol/v0.3-handoff.md`
+- [UnityLink v0.2](docs/protocol/unitylink-v0.2.md)
+- [UnityGPU Stream v0](docs/protocol/unitygpu-stream-v0.md)
+- [App Metadata TLVs v0](docs/protocol/app-metadata-tlvs-v0.md)
+- [Registries (v0.2)](docs/protocol/registries-v0.2.md)
+- [v0.2 Errata](docs/protocol/v0.2-errata.md)
+- [v0.3 Handoff](docs/protocol/v0.3-handoff.md)
 
 ## License
-Apache-2.0. See `LICENSE` and `NOTICE`
+Apache-2.0. See [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE)
 
 ## Contributing
 This project is early, but we want it to be boring in the best way: stable specs, deterministic behavior, and test vectors that make every implementation match.
 
-See `CONTRIBUTING.md`
+See [`CONTRIBUTING.md`](CONTRIBUTING.md)
